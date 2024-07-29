@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #C3D9C4; /* Matching the background */
+  background-color: white; /* Changed to white */
   padding: 20px 0;
   text-align: center;
   border-bottom: 2px solid #6B8E23; /* Line to separate navigation bar */
@@ -93,7 +93,7 @@ main {
 }
 
 footer {
-  background-color: #C3D9C4; /* Matching the background */
+  background-color: white; /* Changed to white */
   text-align: center;
   padding: 10px 20px;
   border-top: 2px solid #6B8E23; /* Line to separate footer */
