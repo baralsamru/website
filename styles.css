@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: white; /* Changed to white */
+  background-color: white; /* Matching the background */
   padding: 20px 0;
   text-align: center;
   border-bottom: 2px solid #6B8E23; /* Line to separate navigation bar */
@@ -75,7 +75,7 @@ main {
 .newsletter input[type="email"] {
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #6B8E23;
+  border: 1px solid #C3D9C4;
   border-radius: 5px;
 }
 
@@ -93,9 +93,9 @@ main {
 }
 
 footer {
-  background-color: white; /* Changed to white */
+  background-color: white; /* Matching the background */
   text-align: center;
-  padding: 10px 20px;
+  padding: 1rem;
   border-top: 2px solid #6B8E23; /* Line to separate footer */
   position: fixed;
   bottom: 0;
@@ -104,4 +104,47 @@ footer {
 
 footer p {
   margin: 0;
+}
+/* Add this to your styles.css file */
+.newsletter {
+  background-color: #C3D9C4;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #6B8E23;
+  border-radius: 5px;
+}
+
+.newsletter h2 {
+  font-family: 'Dancing Script', cursive;
+  color: #333;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter input[type="submit"] {
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter input[type="submit"]:hover {
+  background-color: #0056b3;
 }
