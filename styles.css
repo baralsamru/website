@@ -4,14 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa; /* Soft light grey background */
     color: #212529; /* Dark text for high contrast */
 }
-
 /* Header Styles */
 header {
     padding: 30px 0;
