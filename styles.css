@@ -135,6 +135,33 @@ h2 {
     color: #495057; /* Slightly muted text */
 }
 
+/*Article Section */
+.articles-card {
+    background: #f8f9fa; /* Softer background */
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articles-card:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.articles-card h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.articles-card p {
+    font-size: 1rem;
+    color: #495057; /* Slightly muted text */
+}
+
 /* Contact Section */
 #contact {
     text-align: center;
