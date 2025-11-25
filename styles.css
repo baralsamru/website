@@ -27,16 +27,19 @@
 
 /* Skill bars */
 .skill-bar-bg {
-  background-color: #222;
+  background-color: #222; /* dark track */
   border-radius: 50px;
   height: 12px;
   overflow: hidden;
 }
+
 .skill-bar {
   height: 100%;
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  width: 0%; /* start from 0 */
+  background: linear-gradient(90deg, #3b82f6, #60a5fa); /* visible gradient */
   border-radius: 50px;
 }
+
 
 
 /* Cursor for typing */
