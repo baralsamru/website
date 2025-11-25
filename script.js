@@ -63,8 +63,13 @@ function animateParticles(){
 }
 animateParticles();
 
-// Animate skill bars
+// Animate skill bars reliably
 document.querySelectorAll('.skill-bar').forEach(bar => {
   const width = bar.getAttribute('data-width') || '80%';
-  bar.style.setProperty('--skill-width', width);
+  bar.style.width = '0%'; // start from 0
+  setTimeout(() => {      // delay to allow page render
+    bar.style.transition = "width 1.2s ease";
+    bar.style.width = width;
+  }, 100); // small delay
 });
+
