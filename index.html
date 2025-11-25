@@ -3,100 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samrachana Baral - Cybersecurity Enthusiast</title>
+  <title>Samrachana| Portfolio</title>
 
-  <!-- External Stylesheets -->
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <div class="header-container">
-      <h1>Samrachana Baral</h1>
-      <p>Computer Engineering Student | Cybersecurity Enthusiast</p>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#languages">Languages</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#articles">Articles</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+<body class="bg-black text-gray-200 font-sans relative">
+
+  <!-- Particle background -->
+  <canvas id="particle-canvas" class="fixed top-0 left-0 w-full h-full -z-10"></canvas>
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 bg-black bg-opacity-70 backdrop-blur-md z-50 border-b border-gray-800">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold tracking-wide text-white">Samrachana</h1>
+      <div class="space-x-6">
+        <a href="#home" class="hover:text-white transition">Home</a>
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#skills" class="hover:text-white transition">Skills</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </div>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm Samrachana Baral, a Computer Engineering student at Gandaki College of Engineering and Science (GCES), affiliated with Pokhara University, Nepal. My primary interests lie in cybersecurity, with a strong enthusiasm for network security, ethical hacking, and staying current with emerging technologies.
+  <!-- Hero -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4 fade-in">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4 text-white">Hi, I'm Samrachana Baral</h2>
+    <p class="text-lg md:text-xl text-gray-400 max-w-xl">
+      <span id="typed-text"></span><span id="cursor" class="text-white">|</span>
     </p>
+    <br>
+    <p>
+      A Computer Engineering student at Gandaki College of Engineering and Science (GCES), affiliated with Pokhara University, Nepal. <br>
+      My primary interests lie in cybersecurity, with a strong enthusiasm for cloud security, ethical hacking, and staying current with emerging technologies.
+    </p>
+    <button id="scrollBtn"
+      class="mt-8 bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition glow">
+      View My Work
+    </button>
   </section>
 
-  <section id="languages">
-    <h2>Technical Skills</h2>
-    <ul class="languages-list">
-      <li><i class="devicon-bash-plain colored"></i> Bash</li>
-      <li><i class="devicon-python-plain colored"></i> Python</li>
-      <li><i class="devicon-html5-plain colored"></i> HTML</li>
-      <li><i class="devicon-css3-plain colored"></i> CSS</li>
-      <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
-    </ul>
-  </section>
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6 max-w-6xl mx-auto fade-in">
+  <h3 class="text-3xl font-bold text-white mb-10 text-center">Projects</h3>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    
+    <!-- Project 1 -->
+    <a href="https://github.com/baralsamru/Beginner-Nmap-Project" target="_blank" class="project-card">
+      <h4 class="project-title">Beginner-Nmap-Project</h4>
+      <p class="project-desc">This project showcases my initial exploration into network scanning using Nmap.</p>
+    </a>
 
-    <div class="project-card">
-      <h3>Beginner Nmap Scanning Project</h3>
-      <p><strong>Overview:</strong> This project showcases my initial exploration into network scanning using <strong>Nmap</strong>. I learned to identify open ports, services, and operating systems running on remote machines.</p>
-      <p><strong>Technologies:</strong> Bash Scripting</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/baralsamru/Beginner-Nmap-Project" target="_blank">View on GitHub</a></p>
+    <!-- Project 2 -->
+    <a href="https://github.com/baralsamru/passwordgenerator" target="_blank" class="project-card">
+      <h4 class="project-title">Password Generator</h4>
+      <p class="project-desc">A simple Python-based tool that generates secure, random passwords—demonstrating my understanding of Python basics and randomization.</p>
+    </a>
+
+    <!-- Project 3 -->
+    <a href="https://github.com/baralsamru/backup_automation_script" target="_blank" class="project-card">
+      <h4 class="project-title">Backup Automation Script</h4>
+      <p class="project-desc"> Developed an automated backup solution using a Bash script on Kali Linux. </p>
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 max-w-6xl mx-auto px-6 fade-in">
+  <h3 class="text-3xl font-bold mb-10 text-white text-center">Skills</h3>
+
+  <div class="space-y-4 max-w-xl mx-auto">
+    <div>
+      <p class="text-gray-300">HTML</p>
+      <div class="skill-bar-bg">
+        <div class="skill-bar" data-width="90%"></div>
+      </div>
     </div>
-
-    <div class="project-card">
-      <h3>Basic Password Generator</h3>
-      <p><strong>Overview:</strong> A simple Python-based tool that generates secure, random passwords—demonstrating my understanding of Python basics and randomization.</p>
-      <p><strong>Technologies:</strong> Python</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/baralsamru/passwordgenerator" target="_blank">View on GitHub</a></p>
+    <div>
+      <p class="text-gray-300">CSS</p>
+      <div class="skill-bar-bg">
+        <div class="skill-bar" data-width="85%"></div>
+      </div>
     </div>
-
-    <div class="project-card">
-      <h3>Backup Automation Script</h3>
-      <p><strong>Overview:</strong> Developed an automated backup solution using a Bash script on Kali Linux. The script handles archiving, naming backups with timestamps, and organizing files securely—demonstrating basic automation for system administration.</p>
-      <p><strong>Technologies:</strong> Bash, Kali Linux</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/baralsamru/backup_automation_script" target="_blank">View on GitHub</a></p>
+    <div>
+      <p class="text-gray-300">JavaScript</p>
+      <div class="skill-bar-bg">
+        <div class="skill-bar" data-width="30%"></div>
+      </div>
     </div>
-  </section>
-
-  <section id="articles">
-    <h2>Articles</h2>
-    <div class="articles-card">
-      <h3>Cybersecurity: A Journey from Complexity to Simplicity</h3>
-      <p><a href="https://medium.com/zerone-magazine/cybersecurity-a-journey-of-complexity-turned-to-simplicity-cd8d1077f555" target="_blank">Read on Medium</a></p>
+      <div>
+      <p class="text-gray-300">Bash</p>
+      <div class="skill-bar-bg">
+        <div class="skill-bar" data-width="75%"></div>
+      </div>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to connect with me through the platforms below:</p>
-    <div class="contact-links">
-      <a href="mailto:bsamru31@gmail.com" class="contact-item">
-        <i class="fas fa-envelope"></i> Email
-      </a>
-      <a href="https://www.linkedin.com/in/samrachana-baral-040373307/" class="contact-item" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://github.com/baralsamru" class="contact-item" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-      </a>
+    <div>
+      <p class="text-gray-300">Python</p>
+      <div class="skill-bar-bg">
+        <div class="skill-bar" data-width="55%"></div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2024 Samrachana Baral. All rights reserved.</p>
+
+  <!-- Contact -->
+ <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center fade-in">
+  <h3 class="text-3xl font-bold text-white mb-6">Let's Talk</h3>
+  <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+    If you want to collaborate, ask something, or just say hi, my inbox is open.
+  </p>
+
+  <div class="flex justify-center gap-4 flex-wrap">
+    <!-- Email button -->
+    <a href="mailto:baralsamru31@proton.me"
+      class="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition glow">
+      Email Me
+    </a>
+
+    <!-- LinkedIn button -->
+    <a href="https://www.linkedin.com/in/samrachana-baral-040373307/" target="_blank"
+      class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-500 transition glow">
+      LinkedIn
+    </a>
+  </div>
+</section>
+
+  <footer class="text-center py-6 text-gray-500 border-t border-gray-800">
+    © 2025 Samrachana. All rights reserved.
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
