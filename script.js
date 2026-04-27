@@ -5,7 +5,7 @@ document.getElementById("scrollBtn").addEventListener("click", () => {
 
 // Typing effect
 const typedText = document.getElementById("typed-text");
-const texts = ["Cybersecurity Enthusiast",  "SOC Learner"];
+const texts = ["Cybersecurity Student",  "SOC Enthusiast"];
 let index = 0, charIndex = 0;
 
 function type() {
